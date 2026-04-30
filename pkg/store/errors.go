@@ -6,6 +6,8 @@ import "errors"
 // exactly one colon separator (expected format: "ext:folder").
 var ErrInvalidRuleFormat = errors.New("rule must have exactly one colon separator")
 
+var ErrInvalidSize = errors.New("Size should be less than 100")
+
 // ErrEmptyRuleComponent is returned when either the extension or folder
 // part of a rule is empty.
 var ErrEmptyRuleComponent = errors.New("rule extension and folder must not be empty")
